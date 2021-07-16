@@ -1,7 +1,8 @@
-body {
+.body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #eee;
+
+
 }
 
 .form-signin {
@@ -48,4 +49,7 @@ padding: 10px 20px;
 background: #56433D;
 color: #F9C941;
 border-right: 2px solid;
-font-size: 0.9em;
+font-size: 0.9em;}
+.container mt-4 {
+margin-top: 200px;
+}

@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel = "stylesheet" href ="/css/bootstrap-utilities.min.css">
+  <link rel="stylesheet" href="/css/input.css">
+  <title>Основная таблица</title>
+</head>
+ <body>
+
 <?php
 
 $servername = "w123";
@@ -15,8 +25,15 @@ $conn = new mysqli("$servername", "$username", "$password", "$database");
 $sql = "SELECT * FROM `test table`";
 if($result = $conn->query($sql)){
     $rowsCount = $result->num_rows; // количество полученных строк
-    echo "<p>Получено объектов: $rowsCount</p>";
-    echo "<table><tr><th>№</th><th>Проблема</th><th>Решение</th><th>Оценка</th></tr>";
+    echo "<p style='margin-top: 50px; text-align: center'>Получено объектов: $rowsCount</p>";
+
+    echo "<table class= 'table table-sm'>
+        <tr class='table-light'>
+            <th>№</th>
+            <th>Проблема</th>
+            <th>Решение</th>
+            <th>Оценка</th>
+        </tr>";
     foreach($result as $row){
         echo "<tr>";
             echo "<td>" . $row["id"] . "</td>";
@@ -33,3 +50,8 @@ if($result = $conn->query($sql)){
 }
 $conn->close();
 ?>
+
+
+</table>
+ </body>
+</html>
