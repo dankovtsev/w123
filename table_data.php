@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <link rel = "stylesheet" href ="/css/bootstrap-utilities.min.css">
-  <link rel="stylesheet" href="/css/input.css">
-  <title>Основная таблица</title>
-</head>
- <body>
-
 <?php
 
 $servername = "w123";
 $username = "ADMIN";
 $password = "123";
 $database = "the task 1";
-
-
 
 // Create connection
 $conn = new mysqli("$servername", "$username", "$password", "$database");
@@ -50,8 +38,3 @@ if($result = $conn->query($sql)){
 }
 $conn->close();
 ?>
-
-
-</table>
- </body>
-</html>

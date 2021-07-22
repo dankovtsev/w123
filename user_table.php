@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <link rel = "stylesheet" href ="/CSS/bootstrap-utilities.min.css">
-  <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/input.css">
-   <title>Основная таблица</title>
-</head>
+<?php require('header.php');?>
 <body>
  <h1 style='text-align: center';> Вы зашли в роли пользователя </h1>
 <?php
@@ -26,9 +18,4 @@ include_once("table_data.php");
   <button type="button" class="btn btn-lg btn-primary" style="padding-top: 1px; padding-bottom: 2px;"disabled>Добавить</button>
 </form><hr>
 </body>
-<footer>
-
-  <p> Если желаете покинуть нас, то рядом <a href="/exit.php">выход</a> </p>
-</footer>
-
-</html>
+<?php require('footer.php');?>

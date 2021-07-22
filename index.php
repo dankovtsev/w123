@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/signin.css">
-    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/input.css">
-    <!-- Bootstrap core CSS -->
-
-    <!-- Custom styles for this template -->
-    <link href = "/css/signin.css" rel="stylesheet">
-  </head>
+<?php require('header.php');?>
 
 
   <body id="background">
 
     <div class="container mt-4">
-<?php
-  if($_COOKIE['user'] ==''):
-?>
+    <?php
+      if($_COOKIE['user'] ==''):
+    ?>
       <form class="form-signin" action="check.php" method="post">
         <h2 class="form-signin-heading" style="margin-top: 200px";>Авторизация</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
@@ -39,4 +27,6 @@
     </div> <!-- /container -->
 
   </body>
-</html>
+
+<?php require('footer.php');?>
+
