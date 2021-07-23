@@ -19,5 +19,5 @@ $mysqli = new mysqli("$servername", "$username", "$password", "$database");
 $result = $mysqli->query("UPDATE `test table` SET `appraisal` = '$app' WHERE `test table`.`id` = '$num'");
 
 
-header('Location: user_table.php');
+header('Location: /core/user/user_table.php');
 exit();

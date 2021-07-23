@@ -19,7 +19,7 @@ $mysqli = new mysqli("$servername", "$username", "$password", "$database");
 $result = $mysqli->query("INSERT INTO `test table` (`problem`, `decision`, `appraisal`, `id`) VALUES ('$probl', '$dec', NULL, NULL);");
 
 
-header('Location: admin_table.php');
+header('Location: /core/admin/admin_table.php');
 exit();
 ?>
 //print_r($result);

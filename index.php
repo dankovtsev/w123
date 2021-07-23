@@ -23,7 +23,7 @@
         <button class="btn btn-lg btn-primary btn-block" type="submit">Вход</button>
       </form>
       <?php else: ?>
-          <p>Добро пожаловать <? echo $_COOKIE['user'] ?>. Перейдите <a href="/user_table.php">далее</a>. </p>
+          <p>Добро пожаловать <? echo $_COOKIE['user'] ?>. Перейдите <a href="#">далее</a>. </p>
           <p>Что бы выйте нажмите <a href="/exit.php">выход</a>. </p>
   <?php endif;?>
     </div> <!-- /container -->

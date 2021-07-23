@@ -30,10 +30,8 @@ if(count($user) == 0){
 }
 
 
-
-
 setcookie('user', $user['mail'], time() + 3600, "/"); //куки 3600 секунд
-
+setcookie('status', $user['status'], "/")
 
 $mysqli->close();
 
