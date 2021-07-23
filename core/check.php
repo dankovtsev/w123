@@ -24,9 +24,9 @@ if(count($user) == 0){
 		echo "Не знаем таких";
  		exit();
 } if ($user[status] =='admin') {
-	header('Location: admin_table.php');
+	header('Location: ./admin/admin_table.php');
 } if ($user[status] == 'user') {
-	header('Location: user_table.php');
+	header('Location: ./user/user_table.php');
 }
 
 

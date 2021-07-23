@@ -1,13 +1,10 @@
-<?php require('header.php');?>
+<?php require('../../templates/header.php');?>
 
 <body>
   <h1 id='user'> Вы зашли как администратор </h1><hr>
-<?php
-if($_COOKIE['user'] ==''){    //проверка на зайцев
-  header('Location: /');
-}
-include_once("table_data.php");
-?>
+
+<?php include_once("../table_data.php");?>
+<?php require("../verification_cookie.php");?>
 
 <form class="form-signin" action="text_add.php" method="post">
 <!-- //один из вариантов
@@ -20,4 +17,4 @@ include_once("table_data.php");
 <button class="btn btn-lg btn-primary btn-block"  type="submit">добавить</button>
 </form>
 </body>
-<?php require('footer.php');?>
+<?php require('../../templates/footer.php');?>
