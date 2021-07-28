@@ -1,6 +1,6 @@
 <?php
 $num = filter_var(trim($_POST['num']), FILTER_SANITIZE_STRING);
-$app = filter_var(trim($_POST['menu']), FILTER_SANITIZE_STRING);
+$app = filter_var(trim($_POST['rating']), FILTER_SANITIZE_STRING);
 //print_r($_POST);
 $servername = "w123";
 $username = "ADMIN";

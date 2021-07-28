@@ -44,7 +44,6 @@ text-align: center;
 #background {
   background-image: url(/pic/fon.jpg);
 }
-.table-data {
-  style='margin-top: 50px;
-  text-align: center;
+.table-data{
+  style='margin-top: 50px; text-align: center';
 }
